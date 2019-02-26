@@ -40,6 +40,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,11 +50,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Admin.cs" />
+    <Compile Include="Common\Basic.cs" />
+    <Compile Include="Common\IDbFactory.cs" />
+    <Compile Include="Framework\About.cs" />
+    <Compile Include="Framework\Bill.cs" />
+    <Compile Include="Framework\BillDetail.cs" />
+    <Compile Include="Framework\Book.cs" />
+    <Compile Include="Framework\BookCategory.cs" />
+    <Compile Include="Framework\Cart.cs" />
+    <Compile Include="Framework\CartDetail.cs" />
+    <Compile Include="Framework\DBContext.cs" />
+    <Compile Include="Framework\Member.cs" />
+    <Compile Include="Framework\Menu.cs" />
+    <Compile Include="Framework\MenuType.cs" />
+    <Compile Include="Framework\Position.cs" />
+    <Compile Include="MVC\DAO\MenuTypeDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="API\DAO\" />
+    <Folder Include="API\DTO\" />
+    <Folder Include="MVC\DTO\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
