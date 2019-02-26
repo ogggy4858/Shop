@@ -94,5 +94,10 @@ namespace Data.Common
             return dbSet.Find(ID);
         }
 
+        public void a()
+        {
+
+        }
+
     }
 }
